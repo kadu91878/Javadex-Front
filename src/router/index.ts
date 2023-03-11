@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "../views/HomeView.vue";
 import JavadexViewVue from "../views/JavadexView.vue";
+import JavadexView2Vue from "../views/JavadexView2.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -23,6 +23,11 @@ const router = createRouter({
       path: "/javadex",
       name: "javadex",
       component: () => import("../views/JavadexView.vue"),
+    },
+    {
+      path: "/javadex2",
+      name: "javadex2",
+      component: JavadexView2Vue,
     },
   ],
 });

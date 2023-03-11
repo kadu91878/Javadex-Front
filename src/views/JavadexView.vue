@@ -1,11 +1,13 @@
 <template>
-  <div>
+  <div class="javadex">
+    <h1>
     <label for="pk1-input">PK1:</label>
     <input id="pk1-input" type="text" v-model="pk1" />
     <label for="pk2-input">PK2:</label>
     <input id="pk2-input" type="text" v-model="pk2" />
-    <button @click="runJavadex">Run Pythondex</button>
+    <button @click="runJavadex">Run Javadex</button>
     <p v-if="javadexResult">{{ javadexResult }}</p>
+  </h1>
   </div>
 </template>
 
@@ -39,3 +41,11 @@ export default defineComponent({
   },
 });
 </script>
+
+
+<style>
+.javadex{
+  margin: 0;
+}
+
+</style>
